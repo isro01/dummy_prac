@@ -9,3 +9,6 @@ git pull origin (____) -
 git push origin (____) -
 git branch -a  - view all branches (one with the star is your current location)
 git branch (branch name)  - create a new branch
+git checkout -b (branch name) - shortcut to create and checkout to a branch
+git branch -D (branch name)  - to delete the branch (doesnt matter merged or not)
+git merge (branch name) - merges with master ( perform this in the master branch)
