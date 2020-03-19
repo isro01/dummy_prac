@@ -1,3 +1,14 @@
 Hello World!
 
 This is just for practice of git commands ;)
+
+#1 Creating a Repo:
+
+->Click on new repo and give a name to your repo. Make it public or private as per your wish. Initialise it with
+  README.md and add 'gitignore (to ignore certain type of files in a commit) and License.
+->Open Terminal and make a new dir and create a text file (just an example).
+->Do "git init" in this dir.
+->Then add the origin "git remote add origin (link of your repo on github)"
+->Then to extract the README.md in your dir do "git pull origin master"
+->Now add the files you want to commit "git add file name"
+->To push the commit do "git push origin master" NOTE: This pushes the changes(commit) to the master branch. (More on this later)
