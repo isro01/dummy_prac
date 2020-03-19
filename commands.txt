@@ -1,0 +1,11 @@
+# This contains some basic git commands. Build up from here.
+
+git init -
+git add - 
+git remote add origin (repo link) - 
+git commit -m "comment" - 
+git status - 
+git pull origin (____) - 
+git push origin (____) -
+git branch -a  - view all branches (one with the star is your current location)
+git branch (branch name)  - create a new branch
