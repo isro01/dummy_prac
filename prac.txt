@@ -12,3 +12,13 @@ This is just for practice of git commands ;)
 ->Then to extract the README.md in your dir do "git pull origin master"
 ->Now add the files you want to commit "git add file name"
 ->To push the commit do "git push origin master" NOTE: This pushes the changes(commit) to the master branch. (More on this later)
+
+#  Generating a pull request:
+
+->Firstly do a "git pull origin master" to get the latest changes.
+->Then create a new branch to work in. (see the commands list)
+->Inside the branch do the required changes.
+->Do "git add ." and "git commit -m "___" ".
+->Now without switching branches do "git push origin (name of your new branch)".
+->Now go to github and you'll see a button saying generate a new pull request. Click on it and write a description(optional)
+  to generate a pull request which can be reviewd by your peers and finally merged into master branch.
