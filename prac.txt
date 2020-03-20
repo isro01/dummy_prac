@@ -12,3 +12,20 @@ This is just for practice of git commands ;)
 ->Then to extract the README.md in your dir do "git pull origin master"
 ->Now add the files you want to commit "git add file name"
 ->To push the commit do "git push origin master" NOTE: This pushes the changes(commit) to the master branch. (More on this later)
+
+#2 Working with SSH
+
+->First check for existing SSH keys on your computer using "ls -al ~/.ssh". File names of public keys are one of the following:
+  id_rsa.pub
+  id_ecdsa.pub
+  id_ed25519.pub
+->Generate new SSH key "ssh-keygen -t rsa -b 4096 -C {your_email@example.com}". (Use email account associated with GiHub).
+  Default file to store the keys is /home/you/.ssh/id_rsa
+->Add SSH key to ssh-agent (So you don't have to type passphrase everytime)
+  $ eval "$(ssh-agent -s)"
+  $ ssh-add ~/.ssh/id_rsa (or whatever the name of your key file is)
+->Add SSH jey to your github account 
+  sudo apt-get install xclip
+  xclip -sel clip < ~/.ssh/id_rsa.pub (will add the content in id_rsa.pub to your clipboard)
+  Now go to your Github account ->Settings->Add SSH key and paste your key there
+->Test your SSH connection by writing "ssh -T git@github.com"
