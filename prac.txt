@@ -13,7 +13,7 @@ This is just for practice of git commands ;)
 ->Now add the files you want to commit "git add file name"
 ->To push the commit do "git push origin master" NOTE: This pushes the changes(commit) to the master branch. (More on this later)
 
-#  Generating a pull request:
+#2 Generating a pull request:
 
 ->Firstly do a "git pull origin master" to get the latest changes.
 ->Then create a new branch to work in. (see the commands list)
@@ -22,3 +22,21 @@ This is just for practice of git commands ;)
 ->Now without switching branches do "git push origin (name of your new branch)".
 ->Now go to github and you'll see a button saying generate a new pull request. Click on it and write a description(optional)
   to generate a pull request which can be reviewd by your peers and finally merged into master branch.
+
+#3 Working with SSH
+
+->First check for existing SSH keys on your computer using "ls -al ~/.ssh". File names of public keys are one of the following:
+  id_rsa.pub
+  id_ecdsa.pub
+  id_ed25519.pub
+->Generate new SSH key "ssh-keygen -t rsa -b 4096 -C {your_email@example.com}". (Use email account associated with GiHub).
+  Default file to store the keys is /home/you/.ssh/id_rsa
+->Add SSH key to ssh-agent (So you don't have to type passphrase everytime)
+  $ eval "$(ssh-agent -s)"
+  $ ssh-add ~/.ssh/id_rsa (or whatever the name of your key file is)
+->Add SSH jey to your github account 
+  sudo apt-get install xclip
+  xclip -sel clip < ~/.ssh/id_rsa.pub (will add the content in id_rsa.pub to your clipboard)
+  Now go to your Github account ->Settings->Add SSH key and paste your key there
+->Test your SSH connection by writing "ssh -T git@github.com"
+
