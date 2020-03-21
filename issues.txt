@@ -1,0 +1,3 @@
+ISSUES AND EXPERIMENTING (We encourage you to try out these on your own)
+
+#1 Working on same files at the same time
