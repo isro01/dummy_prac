@@ -50,4 +50,11 @@ This is just for practice of git commands ;)
 ->If after adding (git add) everything, you see modified content error in git status and want to start over adding do "git reset"
 ->To remove the added file from index do git rm -f --cached (file path)
 
-#5 Forking a repo
+#5 Forking a repo:
+
+->To fork a repo click on the fork opton and fork into your own repo.
+->Go to the forked repo and then clone this to get the repo locally.
+->Now make the required changes (in a different branch) and push it. 
+->While submitting the pull request make sure to scheck the base you're submitting to.
+
+#6
