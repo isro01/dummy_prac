@@ -40,3 +40,12 @@ This is just for practice of git commands ;)
   Now go to your Github account ->Settings->Add SSH key and paste your key there
 ->Test your SSH connection by writing "ssh -T git@github.com"
 
+#4 Working with submodules
+
+->Submodule is used when you're trying to add another git repo to your repo. In such a case instead of doing "git add"
+  we do "git submodule add <url>" url is the link to the repo which you're adding.
+->Now if you've done some changes in the repo which now you want to add, you need to FORK the repo first, then make the changes,
+  push it, and now add the link to this forked repo.
+->What this does is create a link between the repo.
+->If after adding (git add) everything, you see modified content error in git status and want to start over adding do "git reset"
+->To remove the added file from index do git rm -f --cached (file path)
