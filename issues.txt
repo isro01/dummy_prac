@@ -1,1 +1,5 @@
-#1 Working on Different Files
+ISSUES AND EXPERIMENTING (We encourage you to try out these on your own)
+
+#1 Working on same files at the same time
+
+#2 Working on different files at the same time
