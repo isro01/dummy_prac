@@ -2,4 +2,11 @@ ISSUES AND EXPERIMENTING (We encourage you to try out these on your own)
 
 #1 Working on same files at the same time
 
-#2 Working on different files at the same time
+#2 Working on different files at the same time - 
+
+No merge conflict is seen in the github repo when working on different files at the same time
+
+#3 Say for example you have a branch with some file A and you checkout a new branch from the 
+   current branch. Now in the new branch you add a new file and in the previous branch you make
+   changes in the fila A. Here no merge conflict is faced when we try to pull the say new branch
+   into the old branch in local.

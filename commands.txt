@@ -3,6 +3,7 @@
 git init -
 git add - 
 git remote add origin (repo link) - 
+git remote remove origin  - remove added origin
 git commit -m "comment" - 
 git status - 
 git pull origin (____) - 
@@ -14,3 +15,6 @@ git branch -D (branch name)  - to delete the branch (doesnt matter merged or not
 git merge (branch name) - merges with master ( perform this in the master branch)
 git clone -b {branch name} {repo name} - clone a specific branch of a repository
 git submodule add <url> - adds the link to the repo you want to add in your own repo
+git fetch --
+git reset - reset your added files 
+git stash - stashes your added files which can later be used
