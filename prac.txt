@@ -57,4 +57,8 @@ This is just for practice of git commands ;)
 ->Now make the required changes (in a different branch) and push it. 
 ->While submitting the pull request make sure to scheck the base you're submitting to.
 
-#6
+#6 Making a better git commit:
+
+->https://chris.beams.io/posts/git-commit/
+->https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration
+->https://gist.github.com/digitaljhelms/4287848
