@@ -19,3 +19,5 @@ git submodule add <url> - adds the link to the repo you want to add in your own 
 git fetch --
 git reset - reset your added files 
 git stash - stashes your added files which can later be used
+git log - shows your commits in totality
+git log --oneline  - shows one line commit messages
