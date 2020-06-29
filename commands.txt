@@ -14,3 +14,4 @@ git branch -D (branch name)  - to delete the branch (doesnt matter merged or not
 git merge (branch name) - merges with master ( perform this in the master branch)
 git clone -b {branch name} {repo name} - clone a specific branch of a repository
 git submodule add <url> - adds the link to the repo you want to add in your own repo
+git stash - stashes the added files ( not commits them ) which can be later re-opened.( so your changes arent lost XD)
